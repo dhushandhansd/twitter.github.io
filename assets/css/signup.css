@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.content-container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-container {
+    flex: 1.2;
+}
+
+.signup-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signup-container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-sm {
+    width: 42px;
+    height: 42px;
+    padding: 32px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bolder;
+    padding: 5%;
+}
+
+.join-twitter {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.buttons-container {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.google-btn, .apple-btn, .email-btn {
+    width: 373px;
+    height: 50px;
+    border: .5px solid #C2C2C2;
+    border-radius: 35px;
+}
+
+.google-btn:hover, .apple-btn:hover, .email-btn:hover {
+    background-color: #dbdbdb;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.signup-btn-text {
+    margin-top: 5px;
+}
+
+.button-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.button-spacing {
+    margin-top: 20px;
+}
+
+.google-logo, .apple-logo {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+.policies-login-container {
+    margin: 18px 0px 0px 30px;
+    width: 64%;
+}
+
+.policies {
+    padding-top: 5%;
+}
+
+.policies > p {
+    font-size: .7rem;
+    font-weight: 100;
+    color: #636363;
+    line-height: 150%;
+}
+
+.login-container {
+    margin-top: 10%;
+}
+
+.login-container > h4 {
+    font-size: .8rem;
+    font-weight: 100;
+    color: #636363;
+}
+
+.blue {
+    color:#1DA1F2;
+}
+
+.blue:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.services {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.services > li {
+    list-style: none;
+    font-size: .7rem;
+    margin: 8px;
+    color: #727272;
+}
+
+.services > li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyrights-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.copyrights-container > p {
+    color: #727272;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width:720px) {
+    .content-container {
+        display: inline;
+    }
+
+    .signup-container {
+        margin-left: 5%;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding: 5%;
+    }
+    
+    .join-twitter {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 5%;
+    }   
+}
+
+@media only screen and (max-width:320px) {
+    .google-btn, .apple-btn, .email-btn {
+        width: 80%;
+    }
+
+    footer {
+        margin-top: 30%;
+    }
+
+    .signup-container {
+        margin-left: 10%;
+    }
+}
