@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-container {
+    position: fixed;
+    float: left;
+    width: 25%;
+    height: 100vh;
+    border: 1px solid;
+    border-color: rgb(239,243,244);
+}
+
+.brand-logo {
+    margin: 15px 0 0 20%;
+}
+
+.navbar-list {
+    margin: 0px 0px 0px 17%;
+}
+
+.twitter-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.home-div {
+    width: 100%;
+    float: left;
+}
+
+.navbar-items {
+    list-style-type: none;
+    list-style: none;
+}
+
+.navbar-items li {
+    display: flex;
+    width: 65%;
+    border-radius: 25px;
+    padding: 10px
+}
+
+.navbar-items li:hover {
+    background-color: #dad8db;
+    transition: all 500ms ease;
+}
+
+li h3 {
+    padding-left: 10px;
+}
+
+.tweet-btn-container {
+    width: 100%;
+    margin: 20px 0 0 18%;
+}
+
+.tweet-btn {
+    background-color: #1DA1F2;
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.user-id-container {
+    margin: 20% 0 0 20%;
+    width: 70%;
+    height: 50px;
+}
+
+.user {
+    display: flex;
+}
+.user-image-container {
+    margin-top: 2.5px;
+}
+
+.user-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.user-text-container {
+    margin-left: 10px;
+}
+
+.user-name {
+    font-size: .8rem;
+    font-weight: bold;
+    display: inline;
+}
+
+.user-id {
+    font-size: .9rem;
+    font-weight: 300;
+    display: inline;
+    color: rgba(0, 0, 0, 0.897);
+}
