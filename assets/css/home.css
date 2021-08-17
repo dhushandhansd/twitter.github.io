@@ -5,10 +5,15 @@
     margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
+
+.main-container {
+    display: flex;
+}
+
 .nav-container {
     position: fixed;
     float: left;
-    width: 25%;
+    width: 23%;
     height: 100vh;
     border: 1px solid;
     border-color: rgb(239,243,244);
@@ -22,10 +27,11 @@
     margin: 0px 0px 0px 17%;
 }
 
-.twitter-logo {
+.twitter-logo, .nav-icons {
     width: 30px;
     height: 30px;
 }
+
 
 .home-div {
     width: 100%;
@@ -54,24 +60,36 @@ li h3 {
 }
 
 .tweet-btn-container {
-    width: 100%;
+    width: 60%;
     margin: 20px 0 0 18%;
 }
 
 .tweet-btn {
     background-color: #1DA1F2;
-    width: 60%;
+    width: 100%;
     text-align: center;
     padding: 10px;
     color: white;
     font-weight: bold;
     border-radius: 25px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+}
+
+.tweet-btn:hover {
+    background-color: #1d8fd6;
 }
 
 .user-id-container {
-    margin: 20% 0 0 20%;
+    margin: 10% 0 0 16%;
     width: 70%;
     height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.user-id-container:hover {
+    background-color: #dad8db;
+    transition: all 500ms ease;
 }
 
 .user {
@@ -103,4 +121,71 @@ li h3 {
     font-weight: 300;
     display: inline;
     color: rgba(0, 0, 0, 0.897);
+}
+
+/* Feeds-container */
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 23.1%;
+}
+
+.feed-container {
+    flex: 1.5;
+    height: 100vh;
+    border: 1 solid white;
+}
+
+.home-title-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    border-bottom: 1px solid ;
+    border-bottom-color:rgb(239,243,244); ;
+}
+
+.title {
+    margin-left: 20px;
+}
+
+.star-container {
+    margin-right: 20px;
+}
+
+.new-tweet-container {
+    height: 20%;
+    width: 100%;
+    border-bottom:1px solid rgb(239,243,244);
+    display: flex;
+}
+
+.user-profile-container {
+    padding: 10px;
+}
+
+.tweet-box {
+    width: 100%;
+    height: 100%;
+}
+
+.tweet-input {
+    width: 80%;
+    height: 20%;
+}
+
+/* Treding-container */
+
+.trending-container {
+    flex: 1;
+    height: 100vh;
+    background-color: black;
 }
