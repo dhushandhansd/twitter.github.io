@@ -17,7 +17,7 @@
                 </div>
                 <div class="navbar-list">
                     <ul class="navbar-items">
-                        <li class="list-item">
+                        <li class="active">
                             <img class=".nav-icons floating-image" src="./assets/icons/home.png" alt="home">
                             <h3>Home</h3>
                         </li>
@@ -74,76 +74,199 @@
         </div>
         <div class="hero-container">
             <div class="feed-container">
-                <div class="home-title-container">
+                <div class="heading-container">
                     <div class="title">
                         <h4>Home</h4>
                     </div>
                     <div class="star-container">
-                        <img src="./assets/icons/home.png" alt="">
+                        <img src="./assets/icons/star.png" alt="">
                     </div>
                 </div>
                 <div class="new-tweet-container">
-                    <div class="user-profile-container">
-                        <div class="user-image">
-
+                    <div class="tweet-container">
+                        <div class="user-profile-container">
+                            <div class="user-image">
+    
+                            </div>
+                        </div>
+                        <div class="tweet-box" onchange="tweetChange()">
+                            <input class="tweet-input" type="text" placeholder="What's happening?">
                         </div>
                     </div>
-                    <div class="tweet-box">
-                        <input class="tweet-input" type="text" >
+                    <div class="share-container">
+                        <div class="share-icons-container">
+                            <ul class="share-list">
+                                <li class="icons-list">
+                                    <img src="./assets/icons/images.png" alt="attach-image">
+                                </li>
+                                <li class="icons-list">
+                                    <img src="./assets/icons/gif.png" alt="attach-image">
+                                </li>
+                                <li class="icons-list">
+                                    <img src="./assets/icons/poll.png" alt="attach-image">
+                                </li>
+                                <li class="icons-list">
+                                    <img src="./assets/icons/smiley.png" alt="attach-image">
+                                </li>
+                                <li class="icons-list">
+                                    <img src="./assets/icons/schedule.png" alt="attach-image">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tweet-btn-container">
+                            <div class="tweet-btn-sm tweet-btn-disabled">
+                                Tweet
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div style="color: white;" class="trending-container">
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
-                <h4>Shree</h4>
+            <div class="trending-container">
+                <div class="heading-container header-borders no-borders">
+                    <div class="search-box-container">
+                        <i class="fas fa-search"></i>
+                        <input class="search-input" type="text" placeholder="Search Twitter">
+                    </div>
+                </div>
+                <div class="trending-topics-container">
+                    <div class="trending-topics">
+                        <div class="trending-title-container">
+                            <h3 class="trending-title">
+                                What's happening
+                            </h3>
+                        </div>
+                        <div class="trending-cards">
+
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        World news . LIVE
+                                    </div>
+                                    <div class="card-detail">
+                                        Taliban declare 'general amnesty' for government officials and urged them to return to work
+                                    </div>
+                                </div>
+                                <div >
+                                    <img class="card-image" src="./assets/card1-image.jpg" alt="card1-image">
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        Trending in UK
+                                    </div>
+                                    <div class="card-detail">
+                                        UK Motors took over the finanial market of United Kingdom
+                                    </div>
+                                </div>
+                                <div >
+                                    <img class="card-image" src="./assets/ukstudios.png" alt="card1-image">
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        Trending in INDIA
+                                    </div>
+                                    <div class="card-detail">
+                                        Shree Dhushandhan, CEO of UK Groups made a succesfull launch of PSLV Rocket from Sriharikota
+                                    </div>
+                                </div>
+                                <div >
+                                    <img class="card-image" src="./assets/uksd.png" alt="card1-image">
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        Trending in India
+                                    </div>
+                                    <div class="card-detail">
+                                        #ukstudiosthefutureofcinema
+                                        198K Tweets
+                                    </div>
+                                </div>
+                                <div >
+                                    <img class="card-image" src="./assets/ukstudios.png" alt="card1-image">
+                                </div>
+                            </div>
+                            
+                            <div class="show-more-container">
+                                <div class="show-more-btn">
+                                    <div class="show-more">
+                                        Show more
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="follow-suggest-container">
+                    <div class="follow-container">
+                        <div class="follow-title-container">
+                            <h3 class="follow-title">
+                                Who to follow
+                            </h3>
+                        </div>
+
+                        <div class="follow-cards">
+                            <div class="card">
+                                <div>
+                                    <img class="follow-card-image" src="./assets/uksd.png" alt="card1-image">
+                                </div>
+                                <div class="follow-card-content">
+                                    <div class="follow-card-title">
+                                        Shree Dhushandhan
+                                    </div>
+                                    <div class="follow-id">
+                                        @dhushandhan_sd
+                                    </div>
+                                </div>
+                                <div class="follow-btn-container">
+                                    <div class="follow-btn">
+                                        Follow
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div>
+                                    <img class="follow-card-image" src="./assets/ukstudios.png" alt="card1-image">
+                                </div>
+                                <div class="follow-card-content">
+                                    <div class="follow-card-title">
+                                        UK Studios
+                                    </div>
+                                    <div class="follow-id">
+                                        @uk_studios_off
+                                    </div>
+                                </div>
+                                <div class="follow-btn-container">
+                                    <div class="follow-btn">
+                                        Follow
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="show-more-container">
+                                <div class="show-more-btn">
+                                    <div class="show-more">
+                                        Show more
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/10fb6960b0.js" crossorigin="anonymous"></script>
 </body>
 </html>
