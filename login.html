@@ -20,13 +20,13 @@
             <div class="form-container">
                 <div class="form">
                     <div class="email-container">
-                        <input type="email" class="email-address bold-font" placeholder="Phone, email, or username">
+                        <input onchange="loginActivator()" name="email" type="email" class="email-address bold-font" placeholder="Phone, email, or username">
                     </div>
                     <div class="password-container">
-                        <input type="password" class="password bold-font" placeholder="Password">
+                        <input onchange="loginActivator()" type="password" class="password bold-font" placeholder="Password">
                     </div>
                     <div class="login-btn-container">
-                        <div id="login-nav" class="login-btn flex-align ">
+                        <div id="login-nav" class="login-btn flex-align inactive">
                             Login
                         </div>
                     </div>
