@@ -63,7 +63,7 @@ html {
 }
 
 .email-address:focus, .password:focus {
-    outline: none;
+    outline: #1DA1F2;
 }
 
 .login-btn-container {
