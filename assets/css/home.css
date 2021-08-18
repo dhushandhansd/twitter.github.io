@@ -510,3 +510,18 @@ li h3 {
 .post-main-id {
     color: #1DA1F2;
 }
+
+@media only screen and (max-width:760px) {
+    
+    .navbar-items h3 {
+        display: none;
+    }
+
+    .user-text-container {
+        display: none;
+    }
+    
+    .trending-container {
+        display: none;
+    }
+}
