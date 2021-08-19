@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/signup.css" type='text/css'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/signup.css" type="text/css" />
     <title>Twitter. It's what's happening - UKSD</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <div class="content-container">
-            <div class="image-container">
-                <img class="signup-bg" src="https://dhushandhansd.github.io/twitter.github.io/assets/signup-bg.png" alt="signUpBg" type='png'>
-            </div>
-            <div class="signup-container">
-                <img class="logo-sm" src="./assets/twitter-logo.png" alt="logo">
-                <h2 class="hero-title">Happening now</h2>
-                <h3 class="join-twitter">Join Twitter today.</h3>
-                <div class="buttons-container">
-                    <div role="button" class="google-btn">
-                        <div class="button-text">
-                            <img class="google-logo" src="./assets/google.png" alt="google">
-                            <h4 class="signup-btn-text">Sign up with Google</h4>
-                        </div>
-                    </div>
-                    <div role="button" class="apple-btn button-spacing">
-                        <div class="button-text">
-                            <img class="apple-logo" src="./assets/apple.png" alt="apple">
-                            <h4 class="signup-btn-text">Sign up with Apple</h4>
-                        </div>
-                    </div>
-                    <div role="button" class="email-btn button-spacing">
-                        <div class="button-text">
-                            <h4 class="signup-btn-text">Sign up with phone or email</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="policies-login-container">
-                    <div class="policies">
-                        <p>By signing up, you agree to the <span class="blue">Terms of Service</span> and <span class="blue">Privacy Policy</span>, including <span class="blue">Cookie Use.</span></p>
-                    </div>
-                    <div class="login-container">
-                        <h4>Already have an account? <span id="nav-login" class="blue">Log in</span></h4>
-                    </div>
-                </div>
-            </div>
+      <div class="content-container">
+        <div class="image-container">
+          <img
+            class="signup-bg"
+            src="https://dhushandhansd.github.io/twitter.github.io/assets/signup-bg.png"
+            alt="signUpBg"
+            type="png"
+          />
         </div>
-        <footer>
-            <ul class="services">
-                <li><a>About</a></li>
-                <li><a>Help Center</a></li>
-                <li><a>Terms of Service</a></li>
-                <li><a>Privacy Policy</a></li>
-                <li><a>Cookie Policy</a></li>
-                <li><a>Ads Info</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Status</a></li>
-                <li><a>Carrers</a></li>
-                <li><a>Brand Resource</a></li>
-                <li><a>Advertising</a></li>
-                <li><a>Marketing</a></li>
-                <li><a>Twitter for Business</a></li>
-                <li><a>Developers</a></li>
-                <li><a>Directory</a></li>
-                <li><a>Settings</a></li>
-            </ul>
-            <div class="copyrights-container">
-                <p>© 2021 Twitter - UKSD</p>
+        <div class="signup-container">
+          <img class="logo-sm" src="./assets/twitter-logo.png" alt="logo" />
+          <h2 class="hero-title">Happening now</h2>
+          <h3 class="join-twitter">Join Twitter today.</h3>
+          <div class="buttons-container">
+            <div role="button" class="google-btn">
+              <div class="button-text">
+                <img
+                  class="google-logo"
+                  src="./assets/google.png"
+                  alt="google"
+                />
+                <h4 class="signup-btn-text">Sign up with Google</h4>
+              </div>
             </div>
-        </footer>
+            <div role="button" class="apple-btn button-spacing">
+              <div class="button-text">
+                <img class="apple-logo" src="./assets/apple.png" alt="apple" />
+                <h4 class="signup-btn-text">Sign up with Apple</h4>
+              </div>
+            </div>
+            <div role="button" class="email-btn button-spacing">
+              <div class="button-text">
+                <h4 class="signup-btn-text">Sign up with phone or email</h4>
+              </div>
+            </div>
+          </div>
+          <div class="policies-login-container">
+            <div class="policies">
+              <p>
+                By signing up, you agree to the
+                <span class="blue">Terms of Service</span> and
+                <span class="blue">Privacy Policy</span>, including
+                <span class="blue">Cookie Use.</span>
+              </p>
+            </div>
+            <div class="login-container">
+              <h4>
+                Already have an account?
+                <span onclick="loginNavigation()" id="nav-login" class="blue"
+                  >Log in</span
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <ul class="services">
+          <li><a>About</a></li>
+          <li><a>Help Center</a></li>
+          <li><a>Terms of Service</a></li>
+          <li><a>Privacy Policy</a></li>
+          <li><a>Cookie Policy</a></li>
+          <li><a>Ads Info</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Status</a></li>
+          <li><a>Carrers</a></li>
+          <li><a>Brand Resource</a></li>
+          <li><a>Advertising</a></li>
+          <li><a>Marketing</a></li>
+          <li><a>Twitter for Business</a></li>
+          <li><a>Developers</a></li>
+          <li><a>Directory</a></li>
+          <li><a>Settings</a></li>
+        </ul>
+        <div class="copyrights-container">
+          <p>© 2021 Twitter - UKSD</p>
+        </div>
+      </footer>
     </div>
 
     <script src="./assets/script/login.js"></script>
-</body>
+  </body>
 </html>

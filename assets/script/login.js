@@ -2,9 +2,6 @@ const loginButton = document.getElementById('login-nav')
 const userInput = document.querySelector('.email-address')
 const passwordInput = document.querySelector('.password')
 
-const navLogin = document.getElementById('nav-login')
-
-
 
 document.cookie = 'auth=false'
 
@@ -28,6 +25,6 @@ function loginActivator() {
     }
 }
 
-navLogin.addEventListener('click', () => {
+function loginNavigation() {
     location.href = 'https://dhushandhansd.github.io/twitter.github.io/login'
-})
+}
