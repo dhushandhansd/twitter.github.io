@@ -83,6 +83,17 @@ li h3 {
     box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
 }
 
+.tweet-btn h4 {
+    font-weight: 500;
+}
+
+.tweet-btn img {
+    width: 30px;
+    height: 30px;
+    border: 30px;
+    display: none;
+}
+
 .tweet-btn:hover {
     background-color: #1d8fd6;
 }
@@ -125,13 +136,13 @@ li h3 {
 }
 
 .user-name {
-    font-size: .8rem;
+    font-size: 1vw;
     font-weight: bold;
     display: inline;
 }
 
 .user-id {
-    font-size: .9rem;
+    font-size: .8vw;
     font-weight: 300;
     display: inline;
     color: rgba(0, 0, 0, 0.897);
@@ -213,7 +224,7 @@ li h3 {
     padding-bottom: 1px;
     color:#1DA1F2;
     font-weight: 500;
-    width: 23%;
+    width: 25%;
     border-radius: 10px;
 }
 
@@ -286,7 +297,7 @@ li h3 {
 
 .trending-container {
     flex: 1;
-    /* height: 100vh; */
+    height: 100%;
     overflow-x: hidden;
     border-left: 1px solid rgb(239,243,244);
 }
@@ -358,12 +369,12 @@ li h3 {
 }
 
 .card-title {
-    font-size: .7rem;
+    font-size: 1vw;
     font-weight: 300;
 }
 
 .card-detail {
-    font-size: .9rem;
+    font-size: 1vw;
     font-weight: 500;
 }
 
@@ -512,7 +523,44 @@ li h3 {
 }
 
 @media only screen and (max-width:760px) {
+
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-container {
+        max-width: 25%;
+    }
+
+    .tweet-btn {
+        width: 30px;
+        background-color: white;
+    }
+
+    .tweet-btn h4 {
+        display: none;
+    }
+
+    .tweet-btn img {
+        display: block;
+    }
+
+    .tweet-box h4{
+        display: none;
+    }
     
+    .hero-container {
+        width: 160vw;
+    }
+
+    .user-name {
+        word-break: break-all;
+    }
+
+    .user-id {
+        word-break: break-all;
+    }
+
     .navbar-items h3 {
         display: none;
     }
