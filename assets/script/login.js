@@ -11,8 +11,8 @@ const password = 'shree@123'
 function loginNavigation() {
     if(userInput.value === adminuser &&
         passwordInput.value === password) {
-            location.href = 'https://dhushandhansd.github.io/twitter.github.io/home'
             document.cookie = 'auth=true'
+            location.href = 'https://dhushandhansd.github.io/twitter.github.io/home'
     }
 }
 
