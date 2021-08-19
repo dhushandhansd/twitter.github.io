@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>Login on Twitter - UKSD</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-container">
+            <div class="header-logo-container">
+                <img src="./assets/twitter-logo.png" alt="">
+            </div>
+            <div class="header-container">
+                <h2>Log in to Twitter</h2>
+            </div>
+            <div class="form-container">
+                <div class="form">
+                    <div class="email-container">
+                        <input onchange="loginActivator()" name="email" type="email" class="email-address bold-font" placeholder="Phone, email, or username">
+                    </div>
+                    <div class="password-container">
+                        <input onchange="loginActivator()" type="password" class="password bold-font" placeholder="Password">
+                    </div>
+                    <div class="login-btn-container">
+                        <div id="login-nav" class="login-btn flex-align inactive">
+                            Login
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-actions-container">
+                <div class="forgot-pass-signup">
+                    <p class="forgot-pass">Forgot password?</p>
+                    <p> . </p>
+                    <p class="signup">Sign up for Twitter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/script/login.js"></script>
+</body>
+</html>
