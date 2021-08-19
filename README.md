@@ -15,7 +15,7 @@
 
 ## Twitter Workflow
 
-![Twitter Workflow](https://dhushandhansd.github.io/twitter.github.io/twitter-workflow.png)
+![Twitter Workflow](https://dhushandhansd.github.io/twitter.github.io/twitter-flow.png)
 
 ## App BreakDown
 
