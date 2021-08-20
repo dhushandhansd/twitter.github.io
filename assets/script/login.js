@@ -13,6 +13,8 @@ function homeNavigation() {
         passwordInput.value === password) {
             document.cookie = 'auth=true'
             location.href = 'https://dhushandhansd.github.io/twitter.github.io/home'
+    } else {
+        document.cookie = 'auth=false'
     }
 }
 
@@ -20,7 +22,6 @@ function loginActivator() {
     if(userInput.value != '' || userInput.value != null) {
         if(passwordInput.value != '' || passwordInput.value != null) {
             loginButton.classList.remove('inactive')
-            document.cookie = 'auth=false'
         }
     }
 }
