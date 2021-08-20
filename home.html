@@ -134,7 +134,14 @@
                         </div>
                         <div class="tweet-box" onchange="tweetChange()">
                             <input class="tweet-input" type="text" placeholder="What's happening?">
-                            <h4>Everyone can reply</h4>
+                            <div class="tweet-text-container">
+                                <svg class="tweet-globe-icon">
+                                    <g>
+                                        <path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12S6.2 22.5 12 22.5 22.5 17.8 22.5 12 17.8 1.5 12 1.5zM9.047 5.9c-.878.484-1.22.574-1.486.858-.263.284-.663 1.597-.84 1.712-.177.115-1.462.154-1.462.154s2.148 1.674 2.853 1.832c.706.158 2.43-.21 2.77-.142.342.07 2.116 1.67 2.324 2.074.208.404.166 1.748-.038 1.944-.204.196-1.183 1.09-1.393 1.39-.21.3-1.894 4.078-2.094 4.08-.2 0-.62-.564-.73-.848-.11-.284-.427-4.012-.59-4.263-.163-.25-1.126-.82-1.276-1.026-.15-.207-.552-1.387-.527-1.617.024-.23.492-1.007.374-1.214-.117-.207-2.207-1.033-2.61-1.18-.403-.145-.983-.332-.983-.332 1.13-3.652 4.515-6.318 8.52-6.38 0 0 .125-.018.186.14.11.286.256 1.078.092 1.345-.143.23-2.21.99-3.088 1.474zm11.144 8.24c-.21-.383-1.222-2.35-1.593-2.684-.23-.208-2.2-.912-2.55-1.09-.352-.177-1.258-.997-1.267-1.213-.01-.216 1.115-1.204 1.15-1.524.056-.49-1.882-1.835-1.897-2.054-.015-.22.147-.66.31-.81.403-.36 3.19.04 3.556.36 2 1.757 3.168 4.126 3.168 6.873 0 .776-.18 1.912-.282 2.18-.08.21-.443.232-.595-.04z"></path>
+                                    </g>
+                                </svg>
+                                <h4>Everyone can reply</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="share-container">
@@ -302,19 +309,36 @@
                                 <div class="post-actions-container">
                                     <div class="post-actions">
                                         <div class="comment-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/comment.png" alt="comment">
-                                            15k
+                                            <svg class="tweet-icons">
+                                                <g>
+                                                    <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                                                </g>
+                                            </svg>
+                                            678
                                         </div>
                                         <div class="retweet-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/retweet.png" alt="retweet">
-                                            5k
+                                            <svg class="tweet-icons">
+                                                <g>
+                                                    <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                                                </g>
+                                            </svg>
+                                            4k
                                         </div>
                                         <div class="heart-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/heart.png" alt="heart">
-                                            12k
+                                            <svg class="tweet-icons">
+                                                <g>
+                                                    <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                                                </g>
+                                            </svg>
+                                            4.7k
                                         </div>
                                         <div class="share-icon-container icons-bg-comp">
-                                            <img src="./assets/icons/share.png" alt="share">
+                                            <svg class="tweet-icons icons-pad">
+                                                <g>
+                                                    <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path>
+<path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -360,189 +384,36 @@
                                 <div class="post-actions-container">
                                     <div class="post-actions">
                                         <div class="comment-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/comment.png" alt="comment">
-                                            15k
+                                            <svg class="tweet-icons">
+                                                <g>
+                                                    <path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path>
+                                                </g>
+                                            </svg>
+                                            1289
                                         </div>
                                         <div class="retweet-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/retweet.png" alt="retweet">
-                                            5k
+                                            <svg class="tweet-icons">
+                                                <g>
+                                                    <path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path>
+                                                </g>
+                                            </svg>
+                                            2.8k
                                         </div>
                                         <div class="heart-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/heart.png" alt="heart">
-                                            12k
+                                            <svg class="tweet-icons">
+                                                <g>
+                                                    <path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path>
+                                                </g>
+                                            </svg>
+                                            9.1k
                                         </div>
                                         <div class="share-icon-container icons-bg-comp">
-                                            <img src="./assets/icons/share.png" alt="share">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tweets">
-                    <div class="tweet-post-container">
-                        <div class="post-structure">
-                            <div class="profile-image-container">
-                                <div class="user-image tweet-image">
-                                    <img src="./assets/uksd.png" alt="tweet-image">
-                                </div>
-                            </div>
-                            <div class="post-content-container">
-                                <div class="post-title-container">
-                                    <div class="post-header">
-                                        <div class="post-title">
-                                            <h4>Shree Dhushandhan</h4>
-                                        </div>
-                                        <div class="post-user-id">
-                                            <h4>@dhushandhan_sd . 15m</h4>
-                                        </div>
-                                    </div>
-                                    <div class="more-action">
-                                        <div class="post-more-action">
-                                            <img src="./assets/icons/more-icon.png" alt="more-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-description-container">
-                                    <p>Waiting for 2024 Olympics 😂😂😂 </p>
-                                </div>
-                                <div class="post-media-container">
-                                    <div class="post-media">
-                                        <video src="https://dhushandhansd.github.io/twitter.github.io/assets/video/post-video.mp4" autoplay loop muted controls></video>
-                                    </div>
-                                </div>
-                                <div class="post-actions-container">
-                                    <div class="post-actions">
-                                        <div class="comment-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/comment.png" alt="comment">
-                                            789
-                                        </div>
-                                        <div class="retweet-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/retweet.png" alt="retweet">
-                                            2k
-                                        </div>
-                                        <div class="heart-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/heart.png" alt="heart">
-                                            7k
-                                        </div>
-                                        <div class="share-icon-container icons-bg-comp">
-                                            <img src="./assets/icons/share.png" alt="share">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tweets">
-                    <div class="tweet-post-container">
-                        <div class="post-structure">
-                            <div class="profile-image-container">
-                                <div class="user-image tweet-image">
-                                    <img src="./assets/uksd.png" alt="tweet-image">
-                                </div>
-                            </div>
-                            <div class="post-content-container">
-                                <div class="post-title-container">
-                                    <div class="post-header">
-                                        <div class="post-title">
-                                            <h4>Shree Dhushandhan</h4>
-                                        </div>
-                                        <div class="post-user-id">
-                                            <h4>@dhushandhan_sd . 47m</h4>
-                                        </div>
-                                    </div>
-                                    <div class="more-action">
-                                        <div class="post-more-action">
-                                            <img src="./assets/icons/more-icon.png" alt="more-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-description-container">
-                                    <p><span class="post-main-id">@uyireluthu</span> is gonna make a huge impact on world market.</p>
-                                    <p>There will a quick call for the collaboration with <span class="post-main-id">@NASA</span> for super space flight 
-                                    <span class="post-main-id">#superspaceflight #uyireluthu #NASA #LightSpeedTravel</span> </p>
-                                </div>
-                                <div style="display: none;" class="post-media-container">
-                                    <div class="post-media">
-                                        <video src="https://dhushandhansd.github.io/twitter.github.io/assets/video/post-video.mp4" autoplay loop muted controls></video>
-                                    </div>
-                                </div>
-                                <div class="post-actions-container">
-                                    <div class="post-actions">
-                                        <div class="comment-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/comment.png" alt="comment">
-                                            15k
-                                        </div>
-                                        <div class="retweet-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/retweet.png" alt="retweet">
-                                            5k
-                                        </div>
-                                        <div class="heart-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/heart.png" alt="heart">
-                                            12k
-                                        </div>
-                                        <div class="share-icon-container icons-bg-comp">
-                                            <img src="./assets/icons/share.png" alt="share">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tweets">
-                    <div class="tweet-post-container">
-                        <div class="post-structure">
-                            <div class="profile-image-container">
-                                <div class="user-image tweet-image">
-                                    <img src="./assets/uksd.png" alt="tweet-image">
-                                </div>
-                            </div>
-                            <div class="post-content-container">
-                                <div class="post-title-container">
-                                    <div class="post-header">
-                                        <div class="post-title">
-                                            <h4>Shree Dhushandhan</h4>
-                                        </div>
-                                        <div class="post-user-id">
-                                            <h4>@dhushandhan_sd . 1h</h4>
-                                        </div>
-                                    </div>
-                                    <div class="more-action">
-                                        <div class="post-more-action">
-                                            <img src="./assets/icons/more-icon.png" alt="more-icon">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-description-container">
-                                    <p><span class="post-main-id">@uk_studios_off</span> pulling the whole world's Film Industry to a  greater heights</p>
-                                    <p>We are officially announcing the partnership with <span class="post-main-id">@marvel</span> for Amazing Spiderman Death Trap
-                                    <span class="post-main-id">#AmazingSpiderman #uk_studios_off #marvel</span>
-                                    </p>
-                                </div>
-                                <div style="display: none;" class="post-media-container">
-                                    <div class="post-media">
-                                        <video src="https://dhushandhansd.github.io/twitter.github.io/assets/video/post-video.mp4" autoplay loop muted controls></video>
-                                    </div>
-                                </div>
-                                <div class="post-actions-container">
-                                    <div class="post-actions">
-                                        <div class="comment-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/comment.png" alt="comment">
-                                            15k
-                                        </div>
-                                        <div class="retweet-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/retweet.png" alt="retweet">
-                                            5k
-                                        </div>
-                                        <div class="heart-icon-container flex-comp icons-bg-comp">
-                                            <img src="./assets/icons/heart.png" alt="heart">
-                                            12k
-                                        </div>
-                                        <div class="share-icon-container icons-bg-comp">
-                                            <img src="./assets/icons/share.png" alt="share">
+                                            <svg class="tweet-icons icons-pad">
+                                                <g>
+                                                    <path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path>
+<path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -691,7 +562,20 @@
                             </div>
 
                         </div>
+
                     </div>
+
+                    <div class="terms-policy-container">
+                        <ul class="terms">
+                            <li> Terms of Service </li>
+                            <li> Privacy Policy </li>
+                            <li> Cookie Policy </li>
+                            <li> Ads Info </li>
+                            <li> More </li>
+                            <li> © 2021 Twitter - UKSD </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>

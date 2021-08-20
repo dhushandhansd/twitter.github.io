@@ -35,26 +35,66 @@ html {
     font-weight: bolder;
 }
 
-.email-container {
+.email-container, .password-container {
     margin-top: 15px;
-    width: 100%;
+    width: 325px;
+    height: 50px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 4px;
 }
 
-.password-container {
-    margin-top: 30px;
-    width: 100%;
+.pass-field-margin {
+    margin-top: 20px;
 }
+
+.email-label, .pass-label {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.email-address:focus ~ .email-label, .email-address:valid ~ .email-label {
+    font-size: .8rem;
+    font-weight: 300;
+    color: rgba(29,161,242,1.00);
+    transform: translateY(-10px);
+}
+
+.password:focus ~ .pass-label, .password:valid ~ .pass-label {
+    font-size: .8rem;
+    font-weight: 300;
+    color: rgba(29,161,242,1.00);
+    transform: translateY(-10px);
+}
+
+.email-address:focus + .email-container{
+    border: 2.5px solid rgba(29,161,242,1.00);
+}
+
 
 .bold-font {
     font-weight: 300;
     padding-left: 10px;
 }
 
-.email-address, .password, .login-btn {
-    width: 325px;
-    height: 50px;
+.email-address, .password {
+    position: absolute;
+    width: 94%;
+    height: 20px;
+    border:none;
+    top: 25px;
+    left: 5px;
+}
+
+
+.login-btn {
     border: 1px solid rgba(0, 0, 0, 0.274);
     border-radius: 3px;
+    width: 325px;
+    height: 50px;
 }
 
 .email-address:focus, .password:focus {

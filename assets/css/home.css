@@ -223,22 +223,43 @@ li h3 {
     height: 100%;
 }
 
+.tweet-text-container {
+    display: flex;
+    width: 32%;
+    flex-direction: row;
+    padding:3px 5px 0 5px;
+    border-radius: 20px;
+    display: none;
+}
+
+.tweet-input:focus ~ .tweet-text-container {
+    display: block;
+    display: flex;
+}
+
+.tweet-text-container:focus, .tweet-text-container:hover {
+    background-color: #a4dcff;
+    transition: all 500ms ease;
+}
+
+.tweet-globe-icon {
+    width: 30px;
+    height: 30px;
+    color: #1DA1F2;
+}
+
+.tweet-globe-icon > g {
+    width: 16px;
+    height: 16px;
+}
+
 .tweet-box h4 {
-    font-size: .8rem;
-    background-image: url('/assets/icons/earth.png');
-    background-size: 18px;
-    background-repeat: no-repeat;
-    padding-left: 25px;
+    font-size: .9rem;
+    padding-top: 2px;
     padding-bottom: 1px;
     color:#1DA1F2;
     font-weight: 500;
-    width: 25%;
     border-radius: 10px;
-}
-
-.tweet-box h4:hover {
-    background-color: #8ed0f9;
-    transition: all 500ms ease;
 }
 
 .tweet-input {
@@ -323,7 +344,7 @@ li h3 {
 
 .trending-container {
     flex: 1;
-    height: 100%;
+    height: 110%;
     position: -webkit-sticky;
     position: sticky;
     position: inherit;
@@ -337,8 +358,8 @@ li h3 {
     background-color: #f7f9f9;
     padding: 10px;
     border-radius: 25px;
-    margin-top: 20px;
-    margin: 20px 20px;
+    margin-left: 40px;
+    margin-top: 0;
 }
 
 .search-input {
@@ -371,7 +392,11 @@ li h3 {
     width: 80%;
     background-color: whitesmoke;
     border-radius: 20px;
-    margin: 20px;
+    margin-left: 40px;
+}
+
+.follow-container {
+    margin-top: 20px;
 }
 
 .trending-title-container, .follow-title-container {
@@ -525,7 +550,7 @@ li h3 {
 
 .post-media video{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .post-actions {
@@ -565,6 +590,26 @@ li h3 {
 
 .post-main-id {
     color: #1DA1F2;
+}
+
+.terms-policy-container {
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.terms {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.terms li {
+    font-size: .7rem;
+    margin-left: 15px;
 }
 
 .bottom-navbar-container {

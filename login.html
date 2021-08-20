@@ -20,10 +20,12 @@
             <div class="form-container">
                 <div class="form">
                     <div class="email-container">
-                        <input onchange="loginActivator()" name="email" type="email" class="email-address bold-font" placeholder="Phone, email, or username">
+                        <input onchange="loginActivator()" name="email" type="text" class="email-address bold-font" required>
+                        <label class="email-label" for="email">Phone,email, or username</label>
                     </div>
-                    <div class="password-container">
-                        <input onchange="loginActivator()" type="password" class="password bold-font" placeholder="Password">
+                    <div class="password-container pass-field-margin">
+                        <input onchange="loginActivator()" name="password" type="password" class="password bold-font" required>
+                        <label class="pass-label" for="password">Password</label>
                     </div>
                     <div class="login-btn-container">
                         <div onclick="homeNavigation()" id="login-nav" class="login-btn flex-align inactive">
