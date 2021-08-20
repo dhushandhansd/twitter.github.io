@@ -8,7 +8,7 @@ document.cookie = 'auth=false'
 const adminuser = 'dhushandhan.sd@gmail.com'
 const password = 'shree@123'
 
-function loginNavigation() {
+function homeNavigation() {
     if(userInput.value === adminuser &&
         passwordInput.value === password) {
             document.cookie = 'auth=true'

@@ -20,10 +20,13 @@ html {
 
 .content-container {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .image-container {
+    width: 100%;
+    height: 100%;
     flex: 1.2;
 }
 
@@ -98,7 +101,8 @@ html {
 
 .policies-login-container {
     margin: 18px 0px 0px 30px;
-    width: 64%;
+    /* width: 64%; */
+    width: 100%;
 }
 
 .policies {
@@ -113,7 +117,7 @@ html {
 }
 
 .login-container {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .login-container > h4 {
@@ -184,9 +188,27 @@ html {
         font-weight: bold;
         padding-left: 5%;
     }   
+    
+    .policies-login-container {
+        margin: 18px 0 0 0;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .policies-login-container {
+        margin: 18px 0 0 20px;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:320px) {
+    
+    html {
+        overflow-x: hidden;
+    }
+    
     .google-btn, .apple-btn, .email-btn {
         width: 80%;
     }
@@ -198,4 +220,5 @@ html {
     .signup-container {
         margin-left: 10%;
     }
+
 }

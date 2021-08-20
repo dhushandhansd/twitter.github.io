@@ -298,6 +298,9 @@ li h3 {
 .trending-container {
     flex: 1;
     height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    position: inherit;
     overflow-x: hidden;
     border-left: 1px solid rgb(239,243,244);
 }
@@ -336,6 +339,7 @@ li h3 {
     margin-left: 10px;
     font-weight: lighter;
 }
+
 
 .trending-topics, .follow-container {
     width: 80%;
@@ -522,14 +526,14 @@ li h3 {
     color: #1DA1F2;
 }
 
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:770px) {
 
     .main-container {
         display: flex;
         justify-content: space-between;
     }
     .nav-container {
-        max-width: 25%;
+        max-width: 20%;
     }
 
     .tweet-btn {
