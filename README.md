@@ -57,3 +57,12 @@ Shree Dhushandhan
 ## Live App
 
 https://dhushandhansd.github.io/twitter.github.io
+
+## Updates
+
+Aug 20 2021
+
+- Added Responsiveness for Signup, Login and Home Pages
+- Replaced SVG instead of Images
+- Bottom Nav for Small Screen Sizes
+- Toggle of Text and Icons
