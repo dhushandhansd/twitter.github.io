@@ -36,6 +36,9 @@
     height: 30px;
 }
 
+.star-icon-pad {
+    padding-top: 10px;
+}
 
 .home-div {
     width: 100%;
@@ -49,6 +52,7 @@
 
 .navbar-items li {
     display: flex;
+    flex-direction: row;
     width: 65%;
     border-radius: 25px;
     padding: 10px
@@ -69,7 +73,7 @@ li h3 {
 
 .tweet-btn-container {
     width: 60%;
-    margin: 0px 0 0 18%;
+    margin: 10px 0 0 18%;
 }
 
 .tweet-btn {
@@ -81,6 +85,10 @@ li h3 {
     font-weight: bold;
     border-radius: 25px;
     box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+}
+
+.tweet-icon-head {
+    display: none;
 }
 
 .tweet-btn h4 {
@@ -265,13 +273,26 @@ li h3 {
 }
 
 .icons-list {
-    padding: 3px;
-    border-radius: 40px;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: rgba(29,161,242,1.00);
 }
 
-.icons-list:hover {
+.icons-list svg {
+    width: 30px;
+    height: 30px;
+}
+
+.icons-svg {
+    border-radius: 20px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.icons-svg:hover {
     background-color: #8ed0f9;
 }
+
 
 .tweet-btn-sm {
     background-color: #1DA1F2;
@@ -284,12 +305,17 @@ li h3 {
     border-radius: 25px;
     box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
     cursor: pointer;
+    display: flex;
 }
 
 .tweet-btn-disabled {
     background-color: #1da0f28c;
     box-shadow: none;
     cursor: default;
+}
+
+.tweet-btn-sm h4 {
+    padding-left: 10px;
 }
 
 
@@ -507,6 +533,17 @@ li h3 {
     justify-content: space-around;
 }
 
+.tweet-icons {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+
+.tweet-icons:hover {
+    color: #1DA1F2;
+}
+
 .icons-bg-comp {
     padding: 5px;
 }
@@ -515,15 +552,86 @@ li h3 {
     color: #1DA1F2;
 }
 
+.icons-pad {
+    padding-top: 5px;
+}
+
 .flex-comp {
     display: flex;
     align-items: center;
-    font-size: .9rem;
+    font-size: 1rem;
     color: rgb(104, 104, 104);
 }
 
 .post-main-id {
     color: #1DA1F2;
+}
+
+.bottom-navbar-container {
+    display: none;
+}
+
+@media only screen and (max-width:430px) {
+    .nav-container {
+        display: none;
+    }
+
+    .hero-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bottom-navbar-container {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 7%;
+        background-color: white;
+    }
+
+    .navbar-pad {
+        margin-bottom: 10px;
+    }
+
+    .bottom-navbar {
+        width: 100vw;
+    }
+
+    .btm-nav-list {
+        list-style-type: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+
+    .btm-nav-icon-size {
+        width: 30px;
+        height: 30px;
+    }
+
+    .tweet-btn-sm {
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .tweet-btn-sm h4 {
+        display: none;
+    }
+
+    .tweet-icon-head {
+        display: block;
+    }
+
+    .more-action{
+        margin-left: 5px;
+    }
+
+
 }
 
 @media only screen and (max-width:770px) {
